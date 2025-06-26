@@ -6,6 +6,11 @@ $(document).ready(function(){
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
   });
+
+  $('.our-works__slider').slick({
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+  });
 });
 
 //Swiper slider
@@ -33,7 +38,7 @@ function fixedHeader() {
 
   document.addEventListener("scroll", () => {
     console.log(window.scrollY);
-    if (window.scrollY > 20) {
+    if (window.scrollY > 300) {
       header.classList.add('fixed-top');
     } else {
       header.classList.remove('fixed-top');
