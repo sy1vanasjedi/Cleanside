@@ -39,7 +39,6 @@ function fixedHeader() {
   const header = document.querySelector('.header__navbar');
 
   document.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if (window.scrollY > 300) {
       header.classList.add('fixed-top');
     } else {
