@@ -106,12 +106,20 @@ select {
   height: 50px;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler img {
+  width: 50px;
+}
+
 .header .navbar-nav .nav-link {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .header__navbar {
@@ -128,14 +136,14 @@ select {
 }
 
 /*Section hero*/
-.hero {
-  background-image: url("../images/main-banner.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-top: 20px;
+.banner {
+  position: relative;
+}
+
+.banner__info {
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 
 .hero__title,
@@ -151,6 +159,7 @@ select {
   font-size: 18px;
 }
 
+/*Section services*/
 .services__slider .slick-prev,
 .services__slider .slick-next,
 .our-works__slider .slick-prev,
@@ -195,6 +204,53 @@ select {
 .services__slide .card {
   box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
   border: 0;
+}
+
+/*Section employees*/
+.employees__block img {
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+  /*border: 1px solid #214A2B;*/
+  border-radius: 8px;
+}
+
+.blured {
+  filter: blur(4px);
+}
+
+.employee__info-icon-block {
+  border: 1px solid #214A2B;
+}
+
+.employee__info-icon-block img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  border: 1px solid #214A2B;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.employee__info {
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #214A2B;
+  border-radius: 8px;
+  top: 20%;
+  left: 10px;
+  right: 10px;
+  padding: 20px 10px;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);*/
+}
+
+.employee__info.active {
+  display: block;
 }
 
 /*Section counter*/
@@ -350,6 +406,8 @@ select {
 /*Section contact us*/
 .contact-us__contacts {
   background-color: lightgrey;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .contact-us__title {
@@ -396,12 +454,14 @@ select {
   background-color: #214A2B;
 }
 
-.footer__phone {
+.footer__phone,
+.footer__email {
   font-size: 20px;
   color: #ffffff;
 }
 
-.footer__phone:hover {
+.footer__phone:hover,
+.footer__email:hover {
   color: yellow;
 }
 
@@ -414,9 +474,9 @@ select {
 }
 
 /*Media*/
-@media (min-width: 576px) {
-  .header .dropdown:hover > .dropdown-menu {
-    display: block;
-    margin-top: 0;
+@media (max-width: 992px) {
+  .header .navbar-nav .nav-link,
+  .header .navbar-nav .dropdown-item {
+    font-size: 20px;
   }
 }

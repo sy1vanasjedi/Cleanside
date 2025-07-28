@@ -106,6 +106,25 @@ function counter() {
   })
 }
 
+//Employees animation
+function animateCard() {
+  const employeesInfoBtns = document.querySelectorAll('.employee__info-icon-block');
+
+  employeesInfoBtns.forEach((infoBtn) => {
+    infoBtn.addEventListener("click", function () {
+      infoBtn.style.pointerEvents = "none";
+      this.parentElement.parentElement.classList.add('animate__flipInY');
+      this.parentElement.parentElement.querySelector('.employee__photo').classList.toggle('blured');
+      this.parentElement.parentElement.querySelector('.employee__info').classList.toggle('active');
+      setTimeout(() => {
+        this.parentElement.parentElement.classList.remove('animate__flipInY');
+        infoBtn.style.pointerEvents = "auto";
+      }, 1000);
+    })
+  })
+}
+
 //Call functions
 fixedHeader();
 counter();
+animateCard();
