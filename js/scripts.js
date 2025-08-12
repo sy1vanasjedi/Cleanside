@@ -153,18 +153,18 @@ window.addEventListener('scroll', function() {
   const servicesRightCards = document.querySelectorAll('.services__item-right');
   servicesLeftCards.forEach((card) => {
     const elementPosition = card.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.5; // Порог в пикселях, когда элемент считается "видимым"
+    const screenPosition = window.innerHeight / 1.1; // Порог в пикселях, когда элемент считается "видимым"
 
     if (elementPosition < screenPosition) {
-      card.classList.add('animate__animated', 'animate__backInLeft', 'active');
+      card.classList.add('animate__animated', 'animate__backInLeft', 'animate__fast', 'active');
     }
   });
   servicesRightCards.forEach((card) => {
     const elementPosition = card.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.5; // Порог в пикселях, когда элемент считается "видимым"
+    const screenPosition = window.innerHeight / 1.1; // Порог в пикселях, когда элемент считается "видимым"
 
     if (elementPosition < screenPosition) {
-      card.classList.add('animate__animated', 'animate__backInRight', 'active');
+      card.classList.add('animate__animated', 'animate__backInRight', 'animate__fast', 'active');
     }
   });
 });
