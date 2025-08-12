@@ -99,6 +99,11 @@ select {
 }
 
 /*Header*/
+.header {
+  height: 58px;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+}
+
 .navbar-brand,
 .navbar-brand img,
 .footer__logo {
@@ -116,34 +121,47 @@ select {
 
 .header .navbar-nav .nav-link {
   color: #ffffff !important;
+  border-bottom: 2px solid transparent;
+  padding: 2px 0;
+  margin: 0 10px;
+  transition: all .3s;
 }
 
 .header .navbar-nav .nav-link:hover {
   color: #ffffff !important;
+  border-bottom: 2px solid #ffffff;
+  transition: all .3s;
 }
 
 .header__navbar {
   background-color: #214A2B !important;
 }
 
-/*.header__navbar.fixed-top {
-  opacity: 0.9;
-}*/
-
 .header .navbar-nav .dropdown-menu .dropdown-item:hover {
   background-color: #214A2B;
   color: #ffffff;
 }
 
+.header__navbar.fixed-top {
+  background-color: #214A2B !important;
+}
+
 /*Section hero*/
 .banner {
   position: relative;
+  /*max-height: 700px;*/
 }
+
+/*#chystka-mebliv-page .banner {*/
+/*  max-height: 900px;*/
+/*}*/
 
 .banner__info {
   position: absolute;
   top: 20px;
   left: 10px;
+  display: inline-block;
+  width: 100%;
 }
 
 .hero__title,
@@ -163,7 +181,9 @@ select {
 .services__slider .slick-prev,
 .services__slider .slick-next,
 .our-works__slider .slick-prev,
-.our-works__slider .slick-next {
+.our-works__slider .slick-next,
+.employees__block .slick-prev,
+.employees__block .slick-next {
   width: 35px;
   height: 50px;
   position: absolute;
@@ -173,14 +193,16 @@ select {
 }
 
 .services__slider .slick-prev,
-.our-works__slider .slick-prev {
+.our-works__slider .slick-prev,
+.employees__block .slick-prev {
   transform: rotate(180deg) translateY(50%);
   left: -10px;
   top: 50%;
 }
 
 .services__slider .slick-next,
-.our-works__slider .slick-next {
+.our-works__slider .slick-next,
+.employees__block .slick-next {
   transform: translateY(-50%);
   right: -10px;
   top: 50%;
@@ -206,10 +228,63 @@ select {
   border: 0;
 }
 
+.services__item {
+  margin-top: 25px;
+  opacity: 0;
+}
+
+.services__item.active {
+  opacity: 1;
+}
+
+.services__item .services__picture {
+  max-height: 250px;
+  width: 100%;
+}
+
+.services__wrapper {
+  position: relative;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.services__wrapper:hover {
+  transform: scale(1.05);
+  transition: all .3s;
+}
+
+.services__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  transition: all .3s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.services__info:hover {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.services__title,
+.services__price {
+  color: #214A2B;
+  font-size: 20px;
+}
+
 /*Section employees*/
 .employees__block img {
   box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
-  /*border: 1px solid #214A2B;*/
   border-radius: 8px;
 }
 

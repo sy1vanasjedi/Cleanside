@@ -1,3 +1,6 @@
+//Pages
+const homePage = document.querySelector('.home-page');
+
 //Sliders
 //Services slider
 $(document).ready(function(){
@@ -13,27 +16,40 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
     autoplay: true,
   });
+
+  $('.employees__block').slick({
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+    slidesToShow: 4,
+  });
 });
 
-//Swiper slider
-var swiper = new Swiper(".mySwiper", {
-  effect: "cube",
-  grabCursor: true,
-  autoplay: {
-    delay: 4000,
-  },
-  cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+//Home page
+if (homePage) {
+  initSwiperSlider();
+}
 
 //Functions
+//Swiper slider
+function initSwiperSlider() {
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cube",
+    grabCursor: true,
+    autoplay: {
+      delay: 4000,
+    },
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+}
+
 //Fixed header when we start scrolling
 function fixedHeader() {
   const header = document.querySelector('.header__navbar');
@@ -107,9 +123,16 @@ function counter() {
 }
 
 //Employees animation
-function animateCard() {
-  const employeesInfoBtns = document.querySelectorAll('.employee__info-icon-block');
+let employeesInfoBtns = document.querySelectorAll('.employee__info-icon-block');
+document.addEventListener('DOMContentLoaded', function(){
+  setTimeout(() => {
+    employeesInfoBtns = document.querySelectorAll('.employee__info-icon-block');
+    animateCard();
+    console.log(employeesInfoBtns);
+  }, 1000);
+});
 
+function animateCard() {
   employeesInfoBtns.forEach((infoBtn) => {
     infoBtn.addEventListener("click", function () {
       infoBtn.style.pointerEvents = "none";
@@ -124,7 +147,28 @@ function animateCard() {
   })
 }
 
+//To animate services cards
+window.addEventListener('scroll', function() {
+  const servicesLeftCards = document.querySelectorAll('.services__item-left');
+  const servicesRightCards = document.querySelectorAll('.services__item-right');
+  servicesLeftCards.forEach((card) => {
+    const elementPosition = card.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5; // Порог в пикселях, когда элемент считается "видимым"
+
+    if (elementPosition < screenPosition) {
+      card.classList.add('animate__animated', 'animate__backInLeft', 'active');
+    }
+  });
+  servicesRightCards.forEach((card) => {
+    const elementPosition = card.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5; // Порог в пикселях, когда элемент считается "видимым"
+
+    if (elementPosition < screenPosition) {
+      card.classList.add('animate__animated', 'animate__backInRight', 'active');
+    }
+  });
+});
+
 //Call functions
 fixedHeader();
 counter();
-animateCard();
