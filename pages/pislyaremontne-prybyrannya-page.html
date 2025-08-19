@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--Animate CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Styles -->
   <link rel="stylesheet" href="../css/styles.css">
   <title>Document</title>
@@ -23,8 +25,8 @@
       <div class="inner-wrapper p-3">
         <!--Header-->
         <header class="header">
-          <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand p-0" href="../index.html">
+          <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light py-0 py-lg-1 px-0">
+            <a class="navbar-brand p-0 pl-2" href="../index.html">
               <img src="../images/logo.svg" alt="logo-icon">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +39,9 @@
                     Клінінг
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="pages/cleaning-page.html">Клінінг</a>
-                    <a class="dropdown-item" href="pages/prybyrannya-page.html">Прибирання</a>
-                    <a class="dropdown-item" href="pages/pislyaremontne-prybyrannya-page.html">Післяремонтне прибирання</a>
+                    <a class="dropdown-item" href="cleaning-page.html">Клінінг</a>
+                    <a class="dropdown-item" href="prybyrannya-page.html">Прибирання</a>
+                    <a class="dropdown-item" href="pislyaremontne-prybyrannya-page.html">Післяремонтне прибирання</a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -47,30 +49,33 @@
                     Хімчистка
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="pages/dry-cleaners-page.html">Хімчистка</a>
-                    <a class="dropdown-item" href="pages/chystka-mebliv-page.html">Чистка меблів</a>
-                    <a class="dropdown-item" href="pages/chystka-kylymiv-page.html">Чистка килимів</a>
-                    <a class="dropdown-item" href="pages/akvachistka.html">Аквачистка</a>
+                    <a class="dropdown-item" href="dry-cleaners-page.html">Хімчистка</a>
+                    <a class="dropdown-item" href="chystka-mebliv-page.html">Чистка меблів</a>
+                    <a class="dropdown-item" href="chystka-kylymiv-page.html">Чистка килимів</a>
+                    <a class="dropdown-item" href="akvachistka.html">Аквачистка</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pages/podarunkovi-sertyfikaty-page.html">Подарункові сертифікати</a>
+                  <a class="nav-link" href="podarunkovi-sertyfikaty-page.html">Подарункові сертифікати</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pages/pro-nas.html">Про нас</a>
+                  <a class="nav-link" href="pro-nas.html">Про нас</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pages/kontakty.html">Контакти</a>
+                  <a class="nav-link" href="kontakty.html">Контакти</a>
                 </li>
               </ul>
             </div>
           </nav>
         </header>
         <!--Section hero-->
-        <section class="hero px-3 mt-3">
-          <div class="row">
-            <div class="col-9">
-              <h1 class="hero__title">ПІСЛЯРЕМОНТНЕ ПРИБИРАННЯ</h1>
+        <section class="hero mt-3">
+          <div class="banner">
+            <img src="../images/banners/pislyaremontne-prybyrannya-banner.jpg" alt="banner-picture">
+            <div class="row banner__info">
+              <div class="col-9">
+                <h1 class="hero__title">ПІСЛЯРЕМОНТНЕ ПРИБИРАННЯ</h1>
+              </div>
             </div>
           </div>
         </section>
@@ -89,38 +94,90 @@
         <!--Section services-->
         <section class="services mt-5 px-3">
           <div class="row">
-            <h2 class="col-12 main-title">Послуги</h2>
+            <h2 class="col-12 main-title">ПІСЛЯРЕМОНТНЕ ПРИБИРАННЯ</h2>
           </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <div class="services__slider">
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/services/cleaning/clean-window.jpg" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="#" class="card-text">Прибирання</a>
-                    </div>
-                  </div>
+          <ul class="row services__list mt-5">
+            <li class="col-6 services__item services__item-left">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/generalne-prybyrannya.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Комплексне прибирання після ремонту:</span>
+                  <span class="services__price">Від <strong>2500</strong> грн за робочий день</span>
                 </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/services/cleaning/clean-window.jpg" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="#" class="card-text">Післяремонтне прибирання</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/services/cleaning/clean-window.jpg" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="#" class="card-text">Підтримуюче прибирання</a>
-                    </div>
-                  </div>
-                </div>
+
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="col-6 services__item services__item-right">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/generalne-prybyrannya-1.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Генеральне прибирання</span>
+                  <span class="services__price">До 50кв/м від <strong>4000</strong> грн</span>
+                </div>
+
+              </div>
+            </li>
+            <li class="col-6 services__item services__item-left">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/generalne-prybyrannya-2.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Генеральне прибирання</span>
+                  <span class="services__price">До 60-70кв/м від <strong>4600</strong> грн</span>
+                </div>
+
+              </div>
+            </li>
+            <li class="col-6 services__item services__item-right">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/generalne-prybyrannya-3.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Генеральне прибирання</span>
+                  <span class="services__price">До 80-100кв/м від <strong>5200</strong> грн</span>
+                </div>
+
+              </div>
+            </li>
+            <li class="col-6 services__item services__item-left">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/prybyrannya-kuhni.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Генеральне прибирання кухні</span>
+                  <span class="services__price">Від <strong>2500</strong> грн</span>
+                </div>
+
+              </div>
+            </li>
+            <li class="col-6 services__item services__item-right">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/prybyrannya-vanny.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Генеральне прибирання ванної</span>
+                  <span class="services__price">Від <strong>2500</strong> грн</span>
+                </div>
+
+              </div>
+            </li>
+            <li class="col-6 services__item services__item-left">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/myttya-vikon.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Післяремонтне миття вікон</span>
+                  <span class="services__price">Від <strong>120</strong> грн кв/м</span>
+                </div>
+
+              </div>
+            </li>
+            <li class="col-6 services__item services__item-right">
+              <div class="services__wrapper">
+                <img class="services__picture" src="../images/generalne-prybyrannya/prybyrannya-pislya-remontu.webp" alt="prybyrannya-picture">
+                <div class="services__info">
+                  <span class="services__title">Після ремонтне прибирання</span>
+                  <span class="services__price">Від <strong>3000</strong> грн</span>
+                </div>
+
+              </div>
+            </li>
+          </ul>
         </section>
         <!--Section divider-->
 <!--        <section class="divider mt-5 px-3">-->

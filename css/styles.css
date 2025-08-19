@@ -160,10 +160,18 @@ select {
   background-color: #214A2B !important;
 }
 
+.header__navbar .dropdown-menu a {
+  text-wrap: nowrap !important;
+}
+
 /*Section hero*/
 .banner {
   position: relative;
   /*max-height: 700px;*/
+}
+
+.banner img {
+  width: 100%;
 }
 
 /*#chystka-mebliv-page .banner {*/
