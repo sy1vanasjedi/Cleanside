@@ -148,9 +148,10 @@ function animateCard() {
 }
 
 //To animate services cards
-window.addEventListener('scroll', function() {
+function startServicesAnimation() {
   const servicesLeftCards = document.querySelectorAll('.services__item-left');
   const servicesRightCards = document.querySelectorAll('.services__item-right');
+
   servicesLeftCards.forEach((card) => {
     const elementPosition = card.getBoundingClientRect().top;
     const screenPosition = window.innerHeight / 1.1; // Порог в пикселях, когда элемент считается "видимым"
@@ -167,7 +168,10 @@ window.addEventListener('scroll', function() {
       card.classList.add('animate__animated', 'animate__backInRight', 'animate__fast', 'active');
     }
   });
-});
+}
+
+window.addEventListener('scroll', startServicesAnimation);
+window.addEventListener('pageshow', startServicesAnimation);
 
 //Call functions
 fixedHeader();

@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--Animate CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Styles -->
   <link rel="stylesheet" href="../css/styles.css">
   <title>Document</title>
@@ -23,32 +25,31 @@
       <div class="inner-wrapper p-3">
         <!--Header-->
         <header class="header">
-          <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light py-3">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../images/logo.png" alt="logo-icon">
+          <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light py-0 py-lg-1 px-0">
+            <a class="navbar-brand p-0 pl-2" href="../index.html">
+              <img src="../images/logo.svg" alt="logo-icon">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <img src="../images/icons/burger-menu.svg" alt="menu-icon">
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="cleaning-page.html" role="button" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                     Клінінг
                   </a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="prybyrannya-page.html">Прибирання</a>
                     <a class="dropdown-item" href="pislyaremontne-prybyrannya-page.html">Післяремонтне прибирання</a>
-                    <a class="dropdown-item" href="pidtrymuyuche-prybyrannya-page.html">Підтримуюче прибирання </a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="dry-cleaners-page.html" role="button" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                     Хімчистка
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="chystka-mebliv-page.html">Меблів</a>
-                    <a class="dropdown-item" href="chystka-kylymiv-page.html">Килимів</a>
+                    <a class="dropdown-item" href="chystka-mebliv-page.html">Чистка меблів</a>
+                    <a class="dropdown-item" href="chystka-kylymiv-page.html">Чистка килимів</a>
                     <a class="dropdown-item" href="akvachistka.html">Аквачистка</a>
                   </div>
                 </li>
@@ -68,10 +69,12 @@
         <!--Section hero-->
         <section class="hero mt-4">
           <div class="banner">
-            <img src="../images/banners/main-banner.webp" alt="banner-picture">
+            <img src="../images/banners/chystka-kylymiv-banner.JPG" alt="banner-picture">
             <div class="row banner__info">
               <div class="col-9">
-                <h1 class="hero__title">Чистка килимів</h1>
+                <div class="white-bg">
+                  <h1 class="hero__title">Чистка килимів</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -91,36 +94,62 @@
         <!--Section services-->
         <section class="services mt-5 px-3">
           <div class="row">
-            <h2 class="col-12 main-title">Послуги</h2>
+            <h2 class="col-12 main-title">Чистка килимів</h2>
           </div>
           <div class="row mt-5">
             <div class="col-12">
-              <div class="services__slider">
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/services/cleaning/clean-window.jpg" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="#" class="card-text">Прибирання</a>
+              <ul class="row services__list mt-5">
+                <li class="col-6 services__item services__item-left">
+                  <div class="services__wrapper">
+                    <img class="services__picture" src="../images/chystka-kylymiv/standartna-chystka.jpg" alt="prybyrannya-picture">
+                    <div class="services__info">
+                      <span class="services__title">Стандартна чистка</span>
+                      <span class="services__price"><strong>80</strong> грн за кв/м</span>
                     </div>
+
                   </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/services/cleaning/clean-window.jpg" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="#" class="card-text">Післяремонтне прибирання</a>
+                </li>
+                <li class="col-6 services__item services__item-right">
+                  <div class="services__wrapper">
+                    <img class="services__picture" src="../images/chystka-kylymiv/vydalennya-zapahu.jpg" alt="prybyrannya-picture">
+                    <div class="services__info">
+                      <span class="services__title">Чистка + видалення запаху</span>
+                      <span class="services__price"><strong>100</strong> грн за кв/м</span>
                     </div>
+
                   </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/services/cleaning/clean-window.jpg" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="#" class="card-text">Підтримуюче прибирання</a>
+                </li>
+                <li class="col-6 services__item services__item-left">
+                  <div class="services__wrapper">
+                    <img class="services__picture" src="../images/chystka-kylymiv/kovrolin.jpg" alt="prybyrannya-picture">
+                    <div class="services__info">
+                      <span class="services__title">Ковролін</span>
+                      <span class="services__price">Від <strong>120</strong> грн</span>
                     </div>
+
                   </div>
-                </div>
-              </div>
+                </li>
+                <li class="col-6 services__item services__item-right">
+                  <div class="services__wrapper">
+                    <img class="services__picture" src="../images/chystka-kylymiv/dostavka.jpg" alt="prybyrannya-picture">
+                    <div class="services__info">
+                      <span class="services__title">Доставка (в дві сторони)</span>
+                      <span class="services__price"><strong>180</strong> грн</span>
+                    </div>
+
+                  </div>
+                </li>
+                <li class="col-6 services__item services__item-right">
+                  <div class="services__wrapper">
+                    <img class="services__picture" src="../images/chystka-kylymiv/dostavka.jpg" alt="prybyrannya-picture">
+                    <div class="services__info">
+                      <span class="services__title">Виїздна хімчистка ковроліну</span>
+                      <span class="services__price">Від <strong>120</strong> грн</span>
+                    </div>
+
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -239,7 +268,7 @@
       </div>
       <footer class="footer mt-5 px-3">
         <div class="row align-items-center h-100">
-          <div class="col-4"><img class="footer__logo" src="../images/logo.png" alt="logo-icon"></div>
+          <div class="col-4"><img class="footer__logo" src="../images/logo.svg" alt="logo-icon"></div>
           <div class="col-4 d-flex justify-content-center">
             <div class="d-flex">
               <a href="#" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/instagram-white.svg" alt="social-icon"></a>
@@ -251,7 +280,7 @@
           <div class="col-4 d-flex flex-column align-items-end">
             <a class="footer__phone" href="#">1 (234) 567-891</a>
             <a class="footer__phone mt-2" href="#">1 (234) 567-891</a>
-            <a class="footer__phone mt-2" href="#">email@company.com</a>
+            <a class="footer__email mt-2" href="#">email@company.com</a>
           </div>
           <div class="col-12">
             <div class="developer-sign">
