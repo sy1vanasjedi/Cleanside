@@ -471,6 +471,12 @@ select {
   font-size: 20px;
 }
 
+.our-works__before-after-block img {
+  width: 300px;
+  max-height: 400px;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+}
+
 /*Section feedback*/
 .feedback__block {
   padding: 10px;
