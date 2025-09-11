@@ -107,7 +107,7 @@ select {
 }
 
 #contactsModal .modal-dialog {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 #contactsModal .modal-content {
