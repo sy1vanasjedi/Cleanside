@@ -98,6 +98,35 @@ select {
   background-color: #214A2B;
 }
 
+/*Contacts modal*/
+.contacts-modal-btn {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#contactsModal .modal-dialog {
+  max-width: 50%;
+}
+
+#contactsModal .modal-content {
+  border: none;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+}
+
+#contactsModal .modal-header {
+  background-color:#214A2B;
+}
+
+#contactsModal .modal-logo {
+  width: 150px;
+}
+
+#contactsModal .main-title {
+  font-size: 20px;
+}
+
 /*Header*/
 .header {
   height: 58px;
@@ -291,6 +320,7 @@ select {
   border-radius: 8px;
   overflow: hidden;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .services__wrapper:hover {
@@ -553,6 +583,7 @@ select {
   font-size: 18px;
 }
 
+#contactsModal img.contact-us__socialimg,
 .contact-us img.contact-us__socialimg,
 .footer img.contact-us__socialimg {
   width: 30px;
@@ -565,6 +596,7 @@ select {
   height: 50px;
 }
 
+#contactsModal img.contact-us__socialimg:hover,
 .contact-us img.contact-us__socialimg:hover,
 .footer img.contact-us__socialimg:hover {
   transform: scale(1.2);

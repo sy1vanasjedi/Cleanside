@@ -1,5 +1,6 @@
 //Pages
 const homePage = document.querySelector('.home-page');
+const prybyrannyaPage = document.querySelector('.prybyrannya-page');
 
 //Sliders
 //Services slider
@@ -35,11 +36,6 @@ $(document).ready(function(){
     slidesToShow: 4,
   });
 });
-
-//Home page
-if (homePage) {
-  initSwiperSlider();
-}
 
 //Functions
 //Swiper slider
@@ -140,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function(){
   setTimeout(() => {
     employeesInfoBtns = document.querySelectorAll('.employee__info-icon-block');
     animateCard();
-    console.log(employeesInfoBtns);
   }, 1000);
 });
 
@@ -185,6 +180,29 @@ function startServicesAnimation() {
 window.addEventListener('scroll', startServicesAnimation);
 window.addEventListener('pageshow', startServicesAnimation);
 
+//Show contact us modal
+function showContactUsModal() {
+  const cards = document.querySelectorAll('.services__wrapper');
+
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const trigerModalBtn = card.parentElement.querySelector('.contacts-modal-btn');
+      trigerModalBtn.click();
+    })
+  })
+}
+
+//Pages
+//Home page
+if (homePage) {
+  initSwiperSlider();
+  counter();
+}
+
+//Prybyrannya page
+if (prybyrannyaPage) {
+  showContactUsModal();
+}
+
 //Call functions
 fixedHeader();
-counter();

@@ -18,6 +18,68 @@
 </head>
 
 <body class="py-5 prybyrannya-page">
+
+  <!--Contacts modal-->
+  <!-- Modal -->
+  <div class="modal fade" id="contactsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="contactsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img class="modal-logo" src="../images/logo.svg" alt="logo-icon">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span style="color:#ffffff" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <h2 class="main-title">Зв'яжіться з нами</h2>
+            </div>
+          </div>
+          <div class="row contact-us__wrapper p-3">
+            <div class="col-12 contact-us__contacts p-2">
+              <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                  <img src="../images/icons/location.svg" alt="location-icon">
+                  <span class="contact-us__title mt-2">Адреса:</span>
+                  <span class="contact-us__text text-center mt-2">
+                    121 Rock Sreet, 21 Avenue,
+                    New York, NY 92103-9000
+                  </span>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                  <img src="../images/icons/email.svg" alt="email-icon">
+                  <span class="contact-us__title my-2">E-mail:</span>
+                  <a href="#">example@company.com</a>
+                  <a href="#">example@company.com</a>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                  <img src="../images/icons/telephone.svg" alt="telephone-icon">
+                  <span class="contact-us__title my-2">Телефонуйте нам:</span>
+                  <a href="#">1 (234) 567-891</a>
+                  <a href="#">1 (234) 567-891</a>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                  <span class="contact-us__title mb-2">Соціальні мережі:</span>
+                  <span class="text-center">Зв'яжіться з нами зручним для вас способом</span>
+                  <div class="d-flex mt-2">
+                    <a href="#" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/instagram.svg" alt="social-icon"></a>
+                    <a href="#" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/telegram.svg" alt="social-icon"></a>
+                    <a href="#" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/viber.svg" alt="social-icon"></a>
+                    <a href="#" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/facebook.svg" alt="social-icon"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="main-wrapper">
       <div class="inner-wrapper p-3">
@@ -96,56 +158,75 @@
           </div>
           <ul class="row services__list mt-4">
             <li class="col-6 services__item services__item-left">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-1.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Генеральне прибирання</span>
                   <span class="services__price">Від <strong>2500</strong> грн</span>
                 </div>
-                
               </div>
             </li>
             <li class="col-6 services__item services__item-right">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-2.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Генеральне прибирання</span>
                   <span class="services__price">До 50кв/м від <strong>4000</strong> грн</span>
                 </div>
-                
               </div>
             </li>
             <li class="col-6 services__item services__item-left">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-3.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Генеральне прибирання</span>
                   <span class="services__price">До 60-70кв/м від <strong>4600</strong> грн</span>
                 </div>
-                
               </div>
             </li>
             <li class="col-6 services__item services__item-right">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-4.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Генеральне прибирання</span>
                   <span class="services__price">До 80-100кв/м від <strong>5200</strong> грн</span>
                 </div>
-                
               </div>
             </li>
             <li class="col-6 services__item services__item-left">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-kuhnya.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Генеральне прибирання кухні</span>
                   <span class="services__price">Від <strong>2500</strong> грн</span>
                 </div>
-                
               </div>
             </li>
             <li class="col-6 services__item services__item-right">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-vanna.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
@@ -155,23 +236,29 @@
               </div>
             </li>
             <li class="col-6 services__item services__item-left">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/gen-prybyrannya-myttya-vikon.jpg" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Сезонне миття вікон</span>
                   <span class="services__price">Від <strong>100</strong> грн кв/м</span>
                 </div>
-                
               </div>
             </li>
             <li class="col-6 services__item services__item-right">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">
+                Launch static backdrop modal
+              </button>
               <div class="services__wrapper">
                 <img class="services__picture" src="../images/generalne-prybyrannya/prybyrannya-pislya-remontu.webp" alt="prybyrannya-picture">
                 <div class="services__info">
                   <span class="services__title">Після ремонтне прибирання</span>
                   <span class="services__price">Від <strong>3000</strong> грн</span>
                 </div>
-                
               </div>
             </li>
           </ul>
