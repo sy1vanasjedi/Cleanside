@@ -238,6 +238,10 @@ select {
 }
 
 /*Section services*/
+.services__slider .card img {
+  height: 200px;
+}
+
 .services__slider .slick-prev,
 .services__slider .slick-next,
 .our-works__slider .slick-prev,
