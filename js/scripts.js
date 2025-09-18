@@ -1,6 +1,10 @@
 //Pages
 const homePage = document.querySelector('.home-page');
 const prybyrannyaPage = document.querySelector('.prybyrannya-page');
+const pislyaremontnePrybyrannyaPage = document.querySelector('.pislyaremontne-prybyrannya-page');
+const chystkaMeblivPage = document.querySelector('.chystka-mebliv-page');
+const chystkaKylymivPage = document.querySelector('.chystka-kylymiv-page');
+const akvachistkaPage = document.querySelector('.akvachistka-page');
 
 //Sliders
 //Services slider
@@ -201,6 +205,26 @@ if (homePage) {
 
 //Prybyrannya page
 if (prybyrannyaPage) {
+  showContactUsModal();
+}
+
+//Pislyaremontne prybyrannya page
+if (pislyaremontnePrybyrannyaPage) {
+  showContactUsModal();
+}
+
+//Chystka mebliv page
+if (chystkaMeblivPage) {
+  showContactUsModal();
+}
+
+//Chystka kylymiv page
+if (chystkaKylymivPage) {
+  showContactUsModal();
+}
+
+//Akvachystka page
+if (akvachistkaPage) {
   showContactUsModal();
 }
 
