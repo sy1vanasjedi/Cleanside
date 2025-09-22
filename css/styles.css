@@ -617,6 +617,29 @@ select {
   height: 450px;
 }
 
+/*About us*/
+.about-us-page .about-us__img {
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.about-us-page .about-us__info p {
+  font-size: 17px;
+  color: #626566;
+}
+
+.about-us-page .about-us__info .logo-title {
+  border-radius: 8px;
+  background-color: #214A2B;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+}
+
+.about-us-page .about-us__text {
+  background-color: lightgrey;
+  box-shadow: inset 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
 /*Footer*/
 .footer {
   height: 150px;
