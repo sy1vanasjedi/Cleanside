@@ -613,6 +613,10 @@ select {
   box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
 }
 
+.contacts-page .contact-us__map iframe {
+  height: 450px;
+}
+
 /*Footer*/
 .footer {
   height: 150px;
