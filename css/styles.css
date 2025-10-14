@@ -36,11 +36,14 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  /*background-image: url('../images/main-bg.jpg');*/
-  background-color: #D3EEF2;
+  /* background-image: url('../images/site-bg.png'); */
+  background-image: url('../images/site-bg.jpg');
+  /* background-image: url('../images/site-bg.webp'); */
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: #D3EEF2; */
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* Remove the default styling for all ul and il that have the class attribute */
