@@ -1,1034 +1,1009 @@
 <!doctype html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!--Slider-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--Link Swiper's CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Styles-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <!--Slider-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!--Link Swiper's CSS-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!--Animate CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!--Styles-->
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
-</head>
-
-<body class="py-5 home-page">
-  <div class="container">
-    <div class="main-wrapper">
-      <div class="inner-wrapper p-3">
-        <!--Header-->
-        <header class="header">
-          <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light py-0 py-lg-1 px-0">
-            <a class="navbar-brand p-0 pl-2" href="index.html">
-              <img src="images/logo.svg" alt="logo-icon">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="images/icons/burger-menu.svg" alt="menu-icon">
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Клінінг
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="pages/prybyrannya-page.html">Прибирання</a>
-                    <a class="dropdown-item" href="pages/pislyaremontne-prybyrannya-page.html">Післяремонтне прибирання</a>
+  <body class="py-5 home-page">
+    <div class="container">
+      <div class="main-wrapper">
+        <div class="inner-wrapper p-3">
+          <!--Header-->
+          <header class="header">
+            <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light py-0 py-lg-1 px-0">
+              <a class="navbar-brand p-0 pl-2" href="index.html">
+                <img src="images/logo.svg" alt="logo-icon" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/icons/burger-menu.svg" alt="menu-icon" />
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> Клінінг </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="pages/prybyrannya-page.html">Прибирання</a>
+                      <a class="dropdown-item" href="pages/pislyaremontne-prybyrannya-page.html">Післяремонтне прибирання</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> Хімчистка </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="pages/chystka-mebliv-page.html">Чистка меблів</a>
+                      <a class="dropdown-item" href="pages/chystka-kylymiv-page.html">Чистка килимів</a>
+                      <a class="dropdown-item" href="pages/akvachistka.html">Аквачистка</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/podarunkovi-sertyfikaty-page.html">Подарункові сертифікати</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/pro-nas.html">Про нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/kontakty.html">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <!--Section hero-->
+          <section class="hero mt-3">
+            <div class="banner">
+              <img src="images/banners/main-banner.webp" alt="banner-picture" />
+              <div class="row banner__info">
+                <div class="col-9">
+                  <div class="white-bg">
+                    <h1 class="hero__title">Клінінгова компанія "C.L.E.A.N.S.I.D.E"</h1>
+                    <p class="hero__text mt-4">Прибирання квартир та офісів будь-якої складності з використанням найсучасніших приладів та засобів.</p>
                   </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Хімчистка
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="pages/chystka-mebliv-page.html">Чистка меблів</a>
-                    <a class="dropdown-item" href="pages/chystka-kylymiv-page.html">Чистка килимів</a>
-                    <a class="dropdown-item" href="pages/akvachistka.html">Аквачистка</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/podarunkovi-sertyfikaty-page.html">Подарункові сертифікати</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/pro-nas.html">Про нас</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/kontakty.html">Контакти</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-        <!--Section hero-->
-        <section class="hero mt-3">
-          <div class="banner">
-            <img src="images/banners/main-banner.webp" alt="banner-picture">
-            <div class="row banner__info">
-              <div class="col-9">
-                <div class="white-bg">
-                  <h1 class="hero__title">Клінінгова компанія "C.L.E.A.N.S.I.D.E"</h1>
-                  <p class="hero__text mt-4">Прибирання квартир та офісів будь-якої складності з використанням найсучасніших приладів та засобів.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!--Section divider-->
-        <section class="divider mt-5 px-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="d-flex align-items-center">
-                <span class="divider__line"></span>
-                <img class="divider__img mx-4" src="images/icons/sweeper-cleaning.svg" alt="divider-icon">
-                <span class="divider__line"></span>
+          </section>
+          <!--Section divider-->
+          <section class="divider mt-5 px-3">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex align-items-center">
+                  <span class="divider__line"></span>
+                  <img class="divider__img mx-4" src="images/icons/sweeper-cleaning.svg" alt="divider-icon" />
+                  <span class="divider__line"></span>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!--Section services-->
-        <section class="services mt-5 px-3">
-          <div class="row">
-            <h2 class="col-12 main-title">Послуги</h2>
-          </div>
-          <div class="row mt-4">
-            <div class="col-12">
-              <div class="services__slider">
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/generalne-prybyrannya/gen-prybyrannya-1.webp" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="pages/prybyrannya-page.html" class="card-text">Прибирання</a>
+          </section>
+          <!--Section services-->
+          <section class="services mt-5 px-3">
+            <div class="row">
+              <h2 class="col-12 main-title">Послуги</h2>
+            </div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <div class="services__slider">
+                  <div class="services__slide py-2 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem">
+                      <img src="images/generalne-prybyrannya/gen-prybyrannya-1.webp" class="card-img-top" alt="slide-picture" />
+                      <div class="card-body text-center">
+                        <a href="pages/prybyrannya-page.html" class="card-text">Прибирання</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/banners/pislyaremontne-prybyrannya-banner.webp" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="pages/pislyaremontne-prybyrannya-page.html" class="card-text">Післяремонтне прибирання</a>
+                  <div class="services__slide py-2 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem">
+                      <img src="images/banners/pislyaremontne-prybyrannya-banner.webp" class="card-img-top" alt="slide-picture" />
+                      <div class="card-body text-center">
+                        <a href="pages/pislyaremontne-prybyrannya-page.html" class="card-text">Післяремонтне прибирання</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/banners/chystka-kylymiv-banner-custom.webp" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="pages/chystka-mebliv-page.html" class="card-text">Чистка меблів</a>
+                  <div class="services__slide py-2 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem">
+                      <img src="images/banners/chystka-kylymiv-banner-custom.webp" class="card-img-top" alt="slide-picture" />
+                      <div class="card-body text-center">
+                        <a href="pages/chystka-mebliv-page.html" class="card-text">Чистка меблів</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/banners/chystka-kylymiv-banner.webp" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="pages/chystka-kylymiv-page.html" class="card-text">Чистка килимів</a>
+                  <div class="services__slide py-2 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem">
+                      <img src="images/banners/chystka-kylymiv-banner.webp" class="card-img-top" alt="slide-picture" />
+                      <div class="card-body text-center">
+                        <a href="pages/chystka-kylymiv-page.html" class="card-text">Чистка килимів</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="services__slide py-2 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/banners/akvachystka-banner.webp" class="card-img-top" alt="slide-picture">
-                    <div class="card-body text-center">
-                      <a href="pages/akvachistka.html" class="card-text">Аквачистка</a>
+                  <div class="services__slide py-2 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem">
+                      <img src="images/banners/akvachystka-banner.webp" class="card-img-top" alt="slide-picture" />
+                      <div class="card-body text-center">
+                        <a href="pages/akvachistka.html" class="card-text">Аквачистка</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!--Section divider-->
-        <section class="divider mt-5 px-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="d-flex align-items-center">
-                <span class="divider__line"></span>
-                <img class="divider__img mx-4" src="images/icons/hotel-man.svg" alt="divider-icon">
-                <span class="divider__line"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section employees-->
-        <section class="employees mt-5 px-3">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="main-title">Наші майстри</h2>
-            </div>
-          </div>
-          <div class="row employees__block mt-2">
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+          </section>
+          <!--Section divider-->
+          <section class="divider mt-5 px-3">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex align-items-center">
+                  <span class="divider__line"></span>
+                  <img class="divider__img mx-4" src="images/icons/hotel-man.svg" alt="divider-icon" />
+                  <span class="divider__line"></span>
                 </div>
-                <div class="employee__info">Дарья, майстер аквачистки та видалення найскладніших плям.</div>
-                <img class="employee__photo" src="images/employees/employee1.webp" alt="employee-img">
               </div>
             </div>
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+          </section>
+          <!--Section employees-->
+          <section class="employees mt-5 px-3">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="main-title">Наші майстри</h2>
+              </div>
+            </div>
+            <div class="row employees__block mt-2">
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Дарья, майстер аквачистки та видалення найскладніших плям.</div>
+                  <img class="employee__photo" src="images/employees/employee1.webp" alt="employee-img" />
                 </div>
-                <div class="employee__info">Денис, майстер чистки мʼяких меблів та миття вікон.</div>
-                <img class="employee__photo" src="images/employees/employee2.webp" alt="employee-img">
               </div>
-            </div>
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Денис, майстер чистки мʼяких меблів та миття вікон.</div>
+                  <img class="employee__photo" src="images/employees/employee2.webp" alt="employee-img" />
                 </div>
-                <div class="employee__info">Юлія, майстер прибирання та клінер екстра класу</div>
-                <img class="employee__photo" src="images/employees/employee3.webp" alt="employee-img">
               </div>
-            </div>
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Юлія, майстер прибирання та клінер екстра класу</div>
+                  <img class="employee__photo" src="images/employees/employee3.webp" alt="employee-img" />
                 </div>
-                <div class="employee__info">Дмитро, найшвидший водій компанії CleanSide</div>
-                <img class="employee__photo" src="images/employees/employee4.webp" alt="employee-img">
               </div>
-            </div>
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Дмитро, найшвидший водій компанії CleanSide</div>
+                  <img class="employee__photo" src="images/employees/employee4.webp" alt="employee-img" />
                 </div>
-                <div class="employee__info">Олександр, майстер з чистки килимів та ковроліну</div>
-                <img class="employee__photo" src="images/employees/employee5.webp" alt="employee-img">
               </div>
-            </div>
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Олександр, майстер з чистки килимів та ковроліну</div>
+                  <img class="employee__photo" src="images/employees/employee5.webp" alt="employee-img" />
                 </div>
-                <div class="employee__info">Олександр, надійніший водій компанії CleanSide</div>
-                <img class="employee__photo" src="images/employees/employee6.webp" alt="employee-img">
               </div>
-            </div>
-            <div class="col-3 my-3 animate__animated employee__card">
-              <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="employee__info-icon-block">
-                  <img src="images/icons/info.svg" alt="info-icon">
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Олександр, надійніший водій компанії CleanSide</div>
+                  <img class="employee__photo" src="images/employees/employee6.webp" alt="employee-img" />
                 </div>
-                <div class="employee__info">Юлія, Адміністратор</div>
-                <img class="employee__photo" src="images/employees/employee7.webp" alt="employee-img">
+              </div>
+              <div class="col-3 my-3 animate__animated employee__card">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  <div class="employee__info-icon-block">
+                    <img src="images/icons/info.svg" alt="info-icon" />
+                  </div>
+                  <div class="employee__info">Юлія, Адміністратор</div>
+                  <img class="employee__photo" src="images/employees/employee7.webp" alt="employee-img" />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!--Section divider-->
-        <section class="divider mt-5 px-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="d-flex align-items-center">
-                <span class="divider__line"></span>
-                <img class="divider__img mx-4" src="images/icons/housekeeping.svg" alt="divider-icon">
-                <span class="divider__line"></span>
+          </section>
+          <!--Section divider-->
+          <section class="divider mt-5 px-3">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex align-items-center">
+                  <span class="divider__line"></span>
+                  <img class="divider__img mx-4" src="images/icons/housekeeping.svg" alt="divider-icon" />
+                  <span class="divider__line"></span>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!--Section counter-->
-        <section class="counter mt-5 px-3">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-flex justify-content-start align-items-center counter__block">
-                <span class="counter__title px-3">Лічильник виконаних замовлень станом на зараз</span>
-                <span class="scroll-counter counter-number" data-counter-time="2000">65480</span>
-                <div class="swiper-body">
-                  <!-- Swiper -->
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
-                          <div class="client-circle"></div>
-                          <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo">
-                          <span class="client-name mt-1">Валерія</span>
-                          <span class="client-text p-2 mt-1 d-flex">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero
-                          </span>
-                          <div class="client-stars d-flex mt-2">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
+          </section>
+          <!--Section counter-->
+          <section class="counter mt-5 px-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex justify-content-start align-items-center counter__block">
+                  <span class="counter__title px-3">Лічильник виконаних замовлень станом на зараз</span>
+                  <span class="scroll-counter counter-number" data-counter-time="2000">65480</span>
+                  <div class="swiper-body">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
+                            <div class="client-circle"></div>
+                            <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo" />
+                            <span class="client-name mt-1">Валерія</span>
+                            <span class="client-text p-2 mt-1 d-flex"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero </span>
+                            <div class="client-stars d-flex mt-2">
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
+                            <div class="client-circle"></div>
+                            <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo" />
+                            <span class="client-name mt-1">Валерія</span>
+                            <span class="client-text p-2 mt-1 d-flex"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero </span>
+                            <div class="client-stars d-flex mt-2">
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
+                            <div class="client-circle"></div>
+                            <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo" />
+                            <span class="client-name mt-1">Валерія</span>
+                            <span class="client-text p-2 mt-1 d-flex"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero </span>
+                            <div class="client-stars d-flex mt-2">
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
+                            <div class="client-circle"></div>
+                            <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo" />
+                            <span class="client-name mt-1">Валерія</span>
+                            <span class="client-text p-2 mt-1 d-flex"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero </span>
+                            <div class="client-stars d-flex mt-2">
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
+                            <div class="client-circle"></div>
+                            <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo" />
+                            <span class="client-name mt-1">Валерія</span>
+                            <span class="client-text p-2 mt-1 d-flex"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero </span>
+                            <div class="client-stars d-flex mt-2">
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
+                            <div class="client-circle"></div>
+                            <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo" />
+                            <span class="client-name mt-1">Валерія</span>
+                            <span class="client-text p-2 mt-1 d-flex"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero </span>
+                            <div class="client-stars d-flex mt-2">
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                              <img src="images/icons/star.svg" alt="star-icon" />
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
-                          <div class="client-circle"></div>
-                          <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo">
-                          <span class="client-name mt-1">Валерія</span>
-                          <span class="client-text p-2 mt-1 d-flex">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero
-                          </span>
-                          <div class="client-stars d-flex mt-2">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
-                          <div class="client-circle"></div>
-                          <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo">
-                          <span class="client-name mt-1">Валерія</span>
-                          <span class="client-text p-2 mt-1 d-flex">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero
-                          </span>
-                          <div class="client-stars d-flex mt-2">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
-                          <div class="client-circle"></div>
-                          <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo">
-                          <span class="client-name mt-1">Валерія</span>
-                          <span class="client-text p-2 mt-1 d-flex">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero
-                          </span>
-                          <div class="client-stars d-flex mt-2">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
-                          <div class="client-circle"></div>
-                          <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo">
-                          <span class="client-name mt-1">Валерія</span>
-                          <span class="client-text p-2 mt-1 d-flex">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero
-                          </span>
-                          <div class="client-stars d-flex mt-2">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="d-flex flex-column align-items-center p-2 client-block grey-bg">
-                          <div class="client-circle"></div>
-                          <img class="client-photo d-flex justify-content-center align-items-center" src="images/client-photo-feedback/client1.jpg" alt="client-photo">
-                          <span class="client-name mt-1">Валерія</span>
-                          <span class="client-text p-2 mt-1 d-flex">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolorem, libero Perspiciatis dolorem, libero libero Perspiciatis dolorem, libero
-                          </span>
-                          <div class="client-stars d-flex mt-2">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                            <img src="images/icons/star.svg" alt="star-icon">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section divider-->
-        <section class="divider mt-5 px-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="d-flex align-items-center">
-                <span class="divider__line"></span>
-                <img class="divider__img mx-4" src="images/icons/cleaning-spray-bottle.svg" alt="divider-icon">
-                <span class="divider__line"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section our works-->
-        <section class="our-works mt-5 px-3">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="main-title">Наші роботи</h2>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <div class="our-works__info d-flex justify-content-center align-items-center">
-                <span class="divider__line"></span>
-                <h3 class="our-works__text mx-4">ДО / ПІСЛЯ</h3>
-                <span class="divider__line"></span>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <div class="our-works__slider">
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p1-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p1-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p2-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p2-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p3-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p3-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p4-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p4-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p5-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p5-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p6-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p6-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p7-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p7-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p8-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p8-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p9-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/prybyrannya/p9-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp1-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp1-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp2-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp2-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp3-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp3-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp4-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/pislyaremontne-prybyrannya/prp4-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m1-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m1-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m2-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m2-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m3-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m3-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m4-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m4-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m5-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m5-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m6-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m6-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m7-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m7-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m8-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m8-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m9-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m9-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m10-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m10-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m11-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m11-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m12-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m12-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m13-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m13-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m14-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m14-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m15-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m15-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m16-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m16-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m17-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m17-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m18-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m18-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m19-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m19-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m20-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m20-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m21-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m21-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m22-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m22-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m23-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m23-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m24-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m24-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m25-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m25-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m26-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m26-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m27-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m27-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m28-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m28-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m29-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m29-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m30-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/mebli/m30-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k1-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k1-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k2-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k2-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k3-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k3-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k4-1.webp" alt="before-after-img">
-                  </div>
-                </div>
-                <div class="our-works__slide">
-                  <div class="our-works__before-after-block d-flex justify-content-center">
-                    <img src="images/before-after/kylymy/k4-2.webp" alt="before-after-img">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section divider-->
-        <section class="divider mt-5 px-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="d-flex align-items-center">
-                <span class="divider__line"></span>
-                <img class="divider__img mx-4" src="images/icons/cleaning-kit.svg" alt="divider-icon">
-                <span class="divider__line"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section feedback-->
-        <section class="feedback mt-5 px-3">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h2 class="main-title">Відгуки</h2>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-10 mt-4">
-              <div class="feedback__block">
-                <div class="feedback__simbol">
-                  <img src="images/icons/quote.svg" alt="quote-icon">
-                </div>
-                <div class="feedback__text mt-4">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore vitae quas! Voluptates officiis, voluptate quia nobis numquam tempora, ratione nihil veritatis animi blanditiis exercitationem. Explicabo praesentium temporibus dolores fugiat.
-                </div>
-                <div class="feedback__client d-flex align-items-center mt-4">
-                  <div class="feedback__photo mr-2">
-                    <img src="images/client-photo-feedback/client1.jpg" alt="client-photo-pic">
-                  </div>
-                  <div class="feedback__name">Greta Brown</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 ml-auto mt-4">
-              <div class="feedback__block">
-                <div class="feedback__simbol">
-                  <img src="images/icons/quote.svg" alt="quote-icon">
-                </div>
-                <div class="feedback__text mt-4">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore vitae quas! Voluptates officiis, voluptate quia nobis numquam tempora, ratione nihil veritatis animi blanditiis exercitationem. Explicabo praesentium temporibus dolores fugiat.
-                </div>
-                <div class="feedback__client d-flex align-items-center mt-4">
-                  <div class="feedback__photo mr-2">
-                    <img src="images/client-photo-feedback/client1.jpg" alt="client-photo-pic">
-                  </div>
-                  <div class="feedback__name">Greta Brown</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 mt-4">
-              <div class="feedback__block">
-                <div class="feedback__simbol">
-                  <img src="images/icons/quote.svg" alt="quote-icon">
-                </div>
-                <div class="feedback__text mt-4">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore vitae quas! Voluptates officiis, voluptate quia nobis numquam tempora, ratione nihil veritatis animi blanditiis exercitationem. Explicabo praesentium temporibus dolores fugiat.
-                </div>
-                <div class="feedback__client d-flex align-items-center mt-4">
-                  <div class="feedback__photo mr-2">
-                    <img src="images/client-photo-feedback/client1.jpg" alt="client-photo-pic">
-                  </div>
-                  <div class="feedback__name">Greta Brown</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section divider-->
-        <section class="divider mt-5 px-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="d-flex align-items-center">
-                <span class="divider__line"></span>
-                <img class="divider__img mx-4" src="images/icons/cleaning-window-man.svg" alt="divider-icon">
-                <span class="divider__line"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Section contact us-->
-        <section class="contact-us mt-5 px-3">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="main-title">Зв'яжіться з нами</h2>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <div class="row contact-us__wrapper">
-                <div class="col-6 contact-us__contacts p-2">
-                  <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-                      <img src="images/icons/location.svg" alt="location-icon">
-                      <span class="contact-us__title mt-2">Адреса:</span>
-                      <span class="contact-us__text text-center mt-2">
-                        м. Полтава вулиця Автобазівська, 7
-                      </span>
-                    </div>
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-                      <img src="images/icons/email.svg" alt="email-icon">
-                      <span class="contact-us__title my-2">E-mail:</span>
-                      <a href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
-                    </div>
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
-                      <img src="images/icons/telephone.svg" alt="telephone-icon">
-                      <span class="contact-us__title my-2">Телефонуйте нам:</span>
-                      <a href="tel:+380661303000">+38 (066) 130-30-00</a>
-                    </div>
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
-                      <span class="contact-us__title mb-2">Соціальні мережі:</span>
-                      <span class="text-center">Зв'яжіться з нами зручним для вас способом</span>
-                      <div class="d-flex mt-2">
-                        <a href="https://www.instagram.com/cleanside.plt?igsh=MTkxZnV0MGE2ZHEyaQ%3D%3D" target="_blank" class="mx-1"><img class="contact-us__socialimg" src="images/icons/instagram.svg" alt="social-icon"></a>
-                        <a href="https://t.me/+380661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/telegram.svg" alt="social-icon"></a>
-                        <a href="viber://chat?number=%2B0661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/viber.svg" alt="social-icon"></a>
-                      </div>
+                      <!-- <div class="swiper-pagination"></div> -->
                     </div>
                   </div>
                 </div>
-                <div class="col-6 contact-us__map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.873634007902!2d34.53138927600502!3d49.56240745090648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f171675e773%3A0x5c3255c70f9fd4c4!2sAvtobazivs&#39;ka%20St%2C%207%2C%20Poltava%2C%20Poltavs&#39;ka%20oblast%2C%2036000!5e0!3m2!1sen!2sua!4v1758014067547!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </section>
+          <!--Section divider-->
+          <section class="divider mt-5 px-3">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex align-items-center">
+                  <span class="divider__line"></span>
+                  <img class="divider__img mx-4" src="images/icons/cleaning-spray-bottle.svg" alt="divider-icon" />
+                  <span class="divider__line"></span>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <footer class="footer mt-5 px-3">
-        <div class="row align-items-center h-100">
-          <div class="col-4"><img class="footer__logo" src="images/logo.svg" alt="logo-icon"></div>
-          <div class="col-4 d-flex justify-content-center">
-            <div class="d-flex">
-              <a href="https://www.instagram.com/cleanside.plt?igsh=MTkxZnV0MGE2ZHEyaQ%3D%3D" target="_blank" class="mx-1"><img class="contact-us__socialimg" src="images/icons/instagram-white.svg" alt="social-icon"></a>
-              <a href="https://t.me/+380661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/telegram-white.svg" alt="social-icon"></a>
-              <a href="viber://chat?number=%2B0661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/viber-white.svg" alt="social-icon"></a>
+          </section>
+          <!--Section our works-->
+          <section class="our-works mt-5 px-3">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="main-title">Наші роботи</h2>
+              </div>
             </div>
-          </div>
-          <div class="col-4 d-flex flex-column align-items-end">
-            <a class="footer__phone" href="tel:+380661303000">+38 (066) 130-30-00</a>
-            <a class="footer__email mt-2" href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
-          </div>
-          <div class="col-12">
-            <div class="developer-sign">
-              <a href="https://github.com/sy1vanasjedi">sy1vanasjedi © 2025</a>
+            <div class="row mt-5">
+              <div class="col-12">
+                <div class="our-works__info d-flex justify-content-center align-items-center">
+                  <span class="divider__line"></span>
+                  <h3 class="our-works__text mx-4">ДО / ПІСЛЯ</h3>
+                  <span class="divider__line"></span>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="row mt-5">
+              <div class="col-12">
+                <div class="our-works__slider">
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p1-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p1-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p2-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p2-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p3-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p3-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p4-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p4-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p5-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p5-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p6-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p6-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p7-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p7-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p8-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p8-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p9-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/prybyrannya/p9-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp1-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp1-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp2-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp2-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp3-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp3-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp4-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/pislyaremontne-prybyrannya/prp4-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m1-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m1-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m2-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m2-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m3-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m3-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m4-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m4-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m5-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m5-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m6-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m6-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m7-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m7-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m8-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m8-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m9-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m9-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m10-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m10-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m11-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m11-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m12-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m12-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m13-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m13-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m14-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m14-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m15-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m15-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m16-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m16-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m17-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m17-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m18-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m18-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m19-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m19-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m20-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m20-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m21-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m21-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m22-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m22-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m23-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m23-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m24-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m24-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m25-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m25-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m26-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m26-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m27-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m27-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m28-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m28-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m29-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m29-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m30-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/mebli/m30-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k1-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k1-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k2-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k2-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k3-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k3-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k4-1.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-works__before-after-block d-flex justify-content-center">
+                      <img src="images/before-after/kylymy/k4-2.webp" alt="before-after-img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Section divider-->
+          <section class="divider mt-5 px-3">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex align-items-center">
+                  <span class="divider__line"></span>
+                  <img class="divider__img mx-4" src="images/icons/cleaning-kit.svg" alt="divider-icon" />
+                  <span class="divider__line"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Section feedback-->
+          <section class="feedback mt-5 px-3">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h2 class="main-title">Відгуки</h2>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-10 mt-4">
+                <div class="feedback__block">
+                  <div class="feedback__simbol">
+                    <img src="images/icons/quote.svg" alt="quote-icon" />
+                  </div>
+                  <div class="feedback__text mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore vitae quas! Voluptates officiis, voluptate quia nobis numquam tempora, ratione nihil veritatis animi blanditiis exercitationem. Explicabo praesentium temporibus dolores fugiat.</div>
+                  <div class="feedback__client d-flex align-items-center mt-4">
+                    <div class="feedback__photo mr-2">
+                      <img src="images/client-photo-feedback/client1.jpg" alt="client-photo-pic" />
+                    </div>
+                    <div class="feedback__name">Greta Brown</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 ml-auto mt-4">
+                <div class="feedback__block">
+                  <div class="feedback__simbol">
+                    <img src="images/icons/quote.svg" alt="quote-icon" />
+                  </div>
+                  <div class="feedback__text mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore vitae quas! Voluptates officiis, voluptate quia nobis numquam tempora, ratione nihil veritatis animi blanditiis exercitationem. Explicabo praesentium temporibus dolores fugiat.</div>
+                  <div class="feedback__client d-flex align-items-center mt-4">
+                    <div class="feedback__photo mr-2">
+                      <img src="images/client-photo-feedback/client1.jpg" alt="client-photo-pic" />
+                    </div>
+                    <div class="feedback__name">Greta Brown</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 mt-4">
+                <div class="feedback__block">
+                  <div class="feedback__simbol">
+                    <img src="images/icons/quote.svg" alt="quote-icon" />
+                  </div>
+                  <div class="feedback__text mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore vitae quas! Voluptates officiis, voluptate quia nobis numquam tempora, ratione nihil veritatis animi blanditiis exercitationem. Explicabo praesentium temporibus dolores fugiat.</div>
+                  <div class="feedback__client d-flex align-items-center mt-4">
+                    <div class="feedback__photo mr-2">
+                      <img src="images/client-photo-feedback/client1.jpg" alt="client-photo-pic" />
+                    </div>
+                    <div class="feedback__name">Greta Brown</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Section divider-->
+          <section class="divider mt-5 px-3">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex align-items-center">
+                  <span class="divider__line"></span>
+                  <img class="divider__img mx-4" src="images/icons/cleaning-window-man.svg" alt="divider-icon" />
+                  <span class="divider__line"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Section contact us-->
+          <section class="contact-us mt-5 px-3">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="main-title">Зв'яжіться з нами</h2>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-12">
+                <div class="row contact-us__wrapper">
+                  <div class="col-6 contact-us__contacts p-2">
+                    <div class="row">
+                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                        <img src="images/icons/location.svg" alt="location-icon" />
+                        <span class="contact-us__title mt-2">Адреса:</span>
+                        <span class="contact-us__text text-center mt-2"> м. Полтава вулиця Автобазівська, 7 </span>
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                        <img src="images/icons/email.svg" alt="email-icon" />
+                        <span class="contact-us__title my-2">E-mail:</span>
+                        <a href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                        <img src="images/icons/telephone.svg" alt="telephone-icon" />
+                        <span class="contact-us__title my-2">Телефонуйте нам:</span>
+                        <a href="tel:+380661303000">+38 (066) 130-30-00</a>
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                        <span class="contact-us__title mb-2">Соціальні мережі:</span>
+                        <span class="text-center">Зв'яжіться з нами зручним для вас способом</span>
+                        <div class="d-flex mt-2">
+                          <a href="https://www.instagram.com/cleanside.plt?igsh=MTkxZnV0MGE2ZHEyaQ%3D%3D" target="_blank" class="mx-1"><img class="contact-us__socialimg" src="images/icons/instagram.svg" alt="social-icon" /></a>
+                          <a href="https://t.me/+380661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/telegram.svg" alt="social-icon" /></a>
+                          <a href="viber://chat?number=%2B0661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/viber.svg" alt="social-icon" /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 contact-us__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.873634007902!2d34.53138927600502!3d49.56240745090648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f171675e773%3A0x5c3255c70f9fd4c4!2sAvtobazivs&#39;ka%20St%2C%207%2C%20Poltava%2C%20Poltavs&#39;ka%20oblast%2C%2036000!5e0!3m2!1sen!2sua!4v1758014067547!5m2!1sen!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </footer>
+        <footer class="footer mt-5 px-3">
+          <div class="row align-items-center h-100">
+            <div class="col-4">
+              <img class="footer__logo" src="images/logo.svg" alt="logo-icon" />
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+              <div class="d-flex">
+                <a href="https://www.instagram.com/cleanside.plt?igsh=MTkxZnV0MGE2ZHEyaQ%3D%3D" target="_blank" class="mx-1"><img class="contact-us__socialimg" src="images/icons/instagram-white.svg" alt="social-icon" /></a>
+                <a href="https://t.me/+380661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/telegram-white.svg" alt="social-icon" /></a>
+                <a href="viber://chat?number=%2B0661303000" class="mx-1"><img class="contact-us__socialimg" src="images/icons/viber-white.svg" alt="social-icon" /></a>
+              </div>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-end">
+              <a class="footer__phone" href="tel:+380661303000">+38 (066) 130-30-00</a>
+              <a class="footer__email mt-2" href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
+            </div>
+            <div class="col-12">
+              <div class="developer-sign">
+                <a href="https://github.com/sy1vanasjedi">sy1vanasjedi © 2025</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  <!-- Slider -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>
-</body>
-
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
