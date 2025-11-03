@@ -16,6 +16,61 @@
   </head>
 
   <body class="py-5 podarunkovi-sertyfikaty-page">
+    <!--Contacts modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="contactsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="contactsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="modal-logo" src="../images/logo.svg" alt="logo-icon" />
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span style="color: #ffffff" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <h2 class="main-title">Зв'яжіться з нами</h2>
+              </div>
+            </div>
+            <div class="row contact-us__wrapper p-3">
+              <div class="col-12 contact-us__contacts p-2">
+                <div class="row">
+                  <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../images/icons/location.svg" alt="location-icon" />
+                    <span class="contact-us__title mt-2">Адреса:</span>
+                    <span class="contact-us__text text-center mt-2"> м. Полтава вулиця Автобазівська, 7 </span>
+                  </div>
+                  <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../images/icons/email.svg" alt="email-icon" />
+                    <span class="contact-us__title my-2">E-mail:</span>
+                    <a href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
+                  </div>
+                  <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                    <img src="../images/icons/telephone.svg" alt="telephone-icon" />
+                    <span class="contact-us__title my-2">Телефонуйте нам:</span>
+                    <a href="tel:+380661303000">+38 (066) 130-30-00</a>
+                  </div>
+                  <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                    <span class="contact-us__title mb-2">Соціальні мережі:</span>
+                    <span class="text-center">Зв'яжіться з нами зручним для вас способом</span>
+                    <div class="d-flex mt-2">
+                      <a href="https://www.instagram.com/cleanside.plt?igsh=MTkxZnV0MGE2ZHEyaQ%3D%3D" target="_blank" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/instagram.svg" alt="social-icon" /></a>
+                      <a href="https://t.me/+380661303000" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/telegram.svg" alt="social-icon" /></a>
+                      <a href="viber://chat?number=%2B0661303000" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/viber.svg" alt="social-icon" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="main-wrapper">
         <div class="inner-wrapper p-3">
@@ -87,6 +142,8 @@
               <div class="col-12">
                 <ul class="row services__list">
                   <li class="col-6 services__item services__item-left">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
                     <div class="services__wrapper">
                       <img class="services__picture" src="../images/sertyfikaty/sertyficat1000.jpg" alt="prybyrannya-picture" />
                       <div class="services__info">
@@ -96,6 +153,8 @@
                     </div>
                   </li>
                   <li class="col-6 services__item services__item-right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
                     <div class="services__wrapper">
                       <img class="services__picture" src="../images/sertyfikaty/sertyficat2500.jpg" alt="prybyrannya-picture" />
                       <div class="services__info">
@@ -105,6 +164,8 @@
                     </div>
                   </li>
                   <li class="col-6 services__item services__item-left">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
                     <div class="services__wrapper">
                       <img class="services__picture" src="../images/sertyfikaty/sertyficat5000.jpg" alt="prybyrannya-picture" />
                       <div class="services__info">
@@ -114,6 +175,8 @@
                     </div>
                   </li>
                   <li class="col-6 services__item services__item-right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
                     <div class="services__wrapper">
                       <img class="services__picture" src="../images/sertyfikaty/sertyficat10000.jpg" alt="prybyrannya-picture" />
                       <div class="services__info">
