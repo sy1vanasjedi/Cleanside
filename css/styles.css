@@ -639,6 +639,14 @@ select {
   height: 100%;
 }
 
+/*Section about page*/
+.about-page__wrapper {
+  padding: 5px;
+  box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+  font-size: 17px;
+  color: #626566;
+}
+
 /*Section video*/
 .video-content {
   max-width: 560px;
