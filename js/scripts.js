@@ -194,11 +194,26 @@ function showContactUsModal() {
     });
 }
 
+//Slider feedback text control
+function feedbackTextControl() {
+    const texts = document.querySelectorAll('.client-text');
+    setTimeout(() => {
+        texts.forEach((text) => {
+            if (text.innerText.split(' ').length > 20) {
+                let cutList = text.innerText.split(' ').slice(0, 20)
+                cutList = cutList.join(' ') + '...';
+                text.innerText = cutList;
+            }
+        })
+    }, 100);
+}
+
 //Pages
 //Home page
 if (homePage) {
     initSwiperSlider();
     counter();
+    feedbackTextControl();
 }
 
 //Prybyrannya page
