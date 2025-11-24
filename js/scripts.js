@@ -15,6 +15,20 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
     if (!homePage) {
@@ -39,6 +53,20 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="slick-prev"><img class="employee__sliderarrow" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img class="employee__sliderarrow" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
         slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+        ]
     });
 });
 
