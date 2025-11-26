@@ -731,6 +731,10 @@ select {
   .footer {
     height: auto;
   }
+
+  .services__item .services__picture {
+    max-height: 170px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -755,6 +759,14 @@ select {
     max-height: 250px;
     box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
   }
+
+  .services__item .services__picture {
+    max-height: 140px;
+  }
+
+  .services__title, .services__price {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -773,6 +785,14 @@ select {
 
   .employees__block .slick-next {
     right: 0px;
+  }
+
+  .services__item .services__picture {
+    max-height: 250px;
+  }
+
+  .services__title, .services__price {
+    font-size: 20px;
   }
 }
 
