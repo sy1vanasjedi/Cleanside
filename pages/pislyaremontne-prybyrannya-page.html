@@ -15,7 +15,7 @@
     <title>Document</title>
   </head>
 
-  <body class="py-5 pislyaremontne-prybyrannya-page">
+  <body class="py-sm-5 pislyaremontne-prybyrannya-page">
     <!--Contacts modal-->
     <!-- Modal -->
     <div class="modal fade" id="contactsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="contactsModalLabel" aria-hidden="true">
@@ -71,9 +71,9 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-md container-mob">
       <div class="main-wrapper">
-        <div class="inner-wrapper p-3">
+        <div class="inner-wrapper p-1 p-sm-3">
           <!--Header-->
           <header class="header">
             <nav class="navbar header__navbar navbar-expand-lg navbar-light bg-light py-0 py-lg-1 px-0">
@@ -143,85 +143,89 @@
             <div class="row">
               <h2 class="col-12 main-title">ПІСЛЯРЕМОНТНЕ ПРИБИРАННЯ</h2>
             </div>
-            <ul class="row services__list mt-4">
-              <li class="col-6 services__item services__item-left">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kompleksne.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Комплексне прибирання після ремонту:</span>
-                    <span class="services__price">Від <strong>2500</strong> грн за робочий день</span>
-                  </div>
-                </div>
-              </li>
-              <li class="col-6 services__item services__item-right">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kvartyra-1.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Квартира після ремонту</span>
-                    <span class="services__price">До 50кв/м від <strong>6000</strong> грн</span>
-                  </div>
-                </div>
-              </li>
-              <li class="col-6 services__item services__item-left">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kvartyra-2.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Квартира після ремонту</span>
-                    <span class="services__price">До 70кв/м від <strong>8400</strong> грн</span>
-                  </div>
-                </div>
-              </li>
-              <li class="col-6 services__item services__item-right">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kvartyra-3.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Квартира після ремонту</span>
-                    <span class="services__price">До 100кв/м від <strong>12000</strong> грн</span>
-                  </div>
-                </div>
-              </li>
-              <li class="col-6 services__item services__item-left">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-budynok.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Будинок після ремонту</span>
-                    <span class="services__price">Від <strong>14000</strong> грн</span>
-                  </div>
-                </div>
-              </li>
-              <li class="col-6 services__item services__item-right">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-myttya-vikon.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Зняття застарілої плівки з вікон</span>
-                    <span class="services__price">Ціна за домовленістю</span>
-                  </div>
-                </div>
-              </li>
-              <li class="col-6 services__item services__item-left">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
-                <div class="services__wrapper">
-                  <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-myttya-vikon.webp" alt="prybyrannya-picture" />
-                  <div class="services__info">
-                    <span class="services__title">Післяремонтне миття вікон</span>
-                    <span class="services__price">Від <strong>120</strong> грн кв/м</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <div class="row">
+              <div class="col-12 px-0">
+                <ul class="row services__list mt-4">
+                  <li class="col-sm-6 services__item services__item-left">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kompleksne.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Комплексне прибирання після ремонту:</span>
+                        <span class="services__price">Від <strong>2500</strong> грн за робочий день</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 services__item services__item-right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kvartyra-1.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Квартира після ремонту</span>
+                        <span class="services__price">До 50кв/м від <strong>6000</strong> грн</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 services__item services__item-left">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kvartyra-2.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Квартира після ремонту</span>
+                        <span class="services__price">До 70кв/м від <strong>8400</strong> грн</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 services__item services__item-right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-kvartyra-3.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Квартира після ремонту</span>
+                        <span class="services__price">До 100кв/м від <strong>12000</strong> грн</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 services__item services__item-left">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-budynok.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Будинок після ремонту</span>
+                        <span class="services__price">Від <strong>14000</strong> грн</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 services__item services__item-right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-myttya-vikon.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Зняття застарілої плівки з вікон</span>
+                        <span class="services__price">Ціна за домовленістю</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-6 services__item services__item-left">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary contacts-modal-btn" data-toggle="modal" data-target="#contactsModal">Launch static backdrop modal</button>
+                    <div class="services__wrapper">
+                      <img class="services__picture" src="../images/pislyaremontne-prybyrannya/pr-prybyrannya-myttya-vikon.webp" alt="prybyrannya-picture" />
+                      <div class="services__info">
+                        <span class="services__title">Післяремонтне миття вікон</span>
+                        <span class="services__price">Від <strong>120</strong> грн кв/м</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
           <!--Section divider-->
           <section class="divider mt-5 px-3">
@@ -236,7 +240,7 @@
             </div>
           </section>
           <!--Section about page-->
-          <section class="about-page mt-5">
+          <section class="about-page mt-5 px-3">
             <div class="row">
               <div class="col-12">
                 <h2 class="main-title">Деталі послуги</h2>
@@ -289,7 +293,7 @@
             </div>
           </section>
           <!--Section before/after-->
-          <section class="before-after mt-5">
+          <section class="before-after mt-5 px-3">
             <div class="row">
               <div class="col-12">
                 <h2 class="main-title">Наші роботи</h2>
@@ -382,27 +386,27 @@
                 <h2 class="main-title">Зв'яжіться з нами</h2>
               </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 px-3">
               <div class="col-12">
                 <div class="row contact-us__wrapper">
-                  <div class="col-6 contact-us__contacts p-2">
+                  <div class="col-12 col-xl-6 contact-us__contacts p-2 order-xl-1 order-2 mt-2 mt-xl-0">
                     <div class="row">
-                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                      <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
                         <img src="../images/icons/location.svg" alt="location-icon" />
                         <span class="contact-us__title mt-2">Адреса:</span>
                         <span class="contact-us__text text-center mt-2"> м. Полтава вулиця Автобазівська, 7 </span>
                       </div>
-                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                      <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
                         <img src="../images/icons/email.svg" alt="email-icon" />
                         <span class="contact-us__title my-2">E-mail:</span>
                         <a href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
                       </div>
-                      <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                      <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center mt-4">
                         <img src="../images/icons/telephone.svg" alt="telephone-icon" />
                         <span class="contact-us__title my-2">Телефонуйте нам:</span>
                         <a href="tel:+380661303000">+38 (066) 130-30-00</a>
                       </div>
-                      <div class="col-6 d-flex flex-column justify-content-center align-items-center mt-4">
+                      <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center mt-4">
                         <span class="contact-us__title mb-2">Соціальні мережі:</span>
                         <span class="text-center">Зв'яжіться з нами зручним для вас способом</span>
                         <div class="d-flex mt-2">
@@ -413,7 +417,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 contact-us__map">
+                  <div class="col-12 col-xl-6 contact-us__map order-xl-2 order-1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.873634007902!2d34.53138927600502!3d49.56240745090648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f171675e773%3A0x5c3255c70f9fd4c4!2sAvtobazivs&#39;ka%20St%2C%207%2C%20Poltava%2C%20Poltavs&#39;ka%20oblast%2C%2036000!5e0!3m2!1sen!2sua!4v1758014067547!5m2!1sen!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
@@ -421,21 +425,23 @@
             </div>
           </section>
         </div>
-        <footer class="footer mt-5 px-3">
+        <footer class="footer mt-5 p-3">
           <div class="row align-items-center h-100">
-            <div class="col-4"><img class="footer__logo" src="../images/logo.svg" alt="logo-icon" /></div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-12 col-sm-4">
+              <img class="footer__logo" src="../images/logo.svg" alt="logo-icon" />
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center mt-3 mt-sm-0">
               <div class="d-flex">
                 <a href="https://www.instagram.com/cleanside.plt?igsh=MTkxZnV0MGE2ZHEyaQ%3D%3D" target="_blank" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/instagram-white.svg" alt="social-icon" /></a>
                 <a href="https://t.me/+380661303000" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/telegram-white.svg" alt="social-icon" /></a>
                 <a href="viber://chat?number=%2B0661303000" class="mx-1"><img class="contact-us__socialimg" src="../images/icons/viber-white.svg" alt="social-icon" /></a>
               </div>
             </div>
-            <div class="col-4 d-flex flex-column align-items-end">
+            <div class=" col-12 col-lg-4 d-flex flex-column align-items-end mt-3 mt-sm-0">
               <a class="footer__phone" href="tel:+380661303000">+38 (066) 130-30-00</a>
               <a class="footer__email mt-2" href="mailto:cleansidepoltava@gmail.com">cleansidepoltava@gmail.com</a>
             </div>
-            <div class="col-12">
+            <div class="col-12 mt-3 mt-sm-0">
               <div class="developer-sign">
                 <a href="https://github.com/sy1vanasjedi">sy1vanasjedi © 2025</a>
               </div>

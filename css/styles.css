@@ -260,7 +260,7 @@ select {
 .our-works__slider .slick-prev,
 .employees__block .slick-prev {
   transform: rotate(180deg) translateY(50%);
-  left: -10px;
+  left: -25px;
   top: 50%;
 }
 
@@ -272,7 +272,7 @@ select {
 .our-works__slider .slick-next,
 .employees__block .slick-next {
   transform: translateY(-50%);
-  right: -10px;
+  right: -25px;
   top: 50%;
 }
 
@@ -307,6 +307,8 @@ select {
 .services__item {
   margin-top: 25px;
   opacity: 0;
+  /*padding-left: 0 !important;*/
+  /*padding-right: 0 !important;*/
 }
 
 .services__item.active {
@@ -315,6 +317,7 @@ select {
 
 .services__item .services__picture {
   max-height: 250px;
+  min-height: 250px;
   width: 100%;
 }
 
@@ -342,7 +345,7 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px;
   transition: all 0.3s;
   cursor: pointer;
   z-index: 1;
@@ -734,6 +737,7 @@ select {
 
   .services__item .services__picture {
     max-height: 170px;
+    min-height: 170px;
   }
 }
 
@@ -762,6 +766,7 @@ select {
 
   .services__item .services__picture {
     max-height: 140px;
+    min-height: 140px;
   }
 
   .services__title, .services__price {
@@ -789,10 +794,54 @@ select {
 
   .services__item .services__picture {
     max-height: 250px;
+    min-height: 250px;
   }
 
   .services__title, .services__price {
     font-size: 20px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 15px !important;
+    margin-top: 15px !important;
+  }
+
+  .our-works .slick-dots {
+    justify-content: start;
+  }
+
+  .slick-dots li {
+    margin: 2px 5px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    width: 15px;
+    height: 15px;
+  }
+
+  .slick-dots li button {
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all .3s;
+  }
+
+  .slick-dots li.slick-active {
+    transition: all .3s;
+  }
+
+  .slick-dots li.slick-active button {
+    background-color: #214a2b;
+    width: 15px;
+    height: 15px;
+    transition: all .3s;
   }
 }
 

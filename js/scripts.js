@@ -28,6 +28,14 @@ $(document).ready(function () {
                     slidesToShow: 1,
                 }
             },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                }
+            },
         ]
     });
 
@@ -38,6 +46,16 @@ $(document).ready(function () {
             autoplay: true,
             slidesToShow: 2,
             slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                        dots: true,
+                    }
+                },
+            ]
         });
     } else {
         $(".our-works__slider").slick({
@@ -46,6 +64,16 @@ $(document).ready(function () {
             autoplay: true,
             slidesToShow: 2,
             slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                        dots: true,
+                    }
+                },
+            ]
         });
     }
 
@@ -64,6 +92,14 @@ $(document).ready(function () {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    dots: true,
                 }
             },
         ]
