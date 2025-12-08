@@ -107,7 +107,7 @@ select {
 }
 
 #contactsModal .modal-dialog {
-  max-width: 40%;
+  max-width: 50%;
 }
 
 #contactsModal .modal-content {
@@ -302,6 +302,10 @@ select {
 .services__slide .card {
   box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);
   border: 0;
+}
+
+.services__item:first-child {
+  margin-top: 25px;
 }
 
 .services__item + .services__item {
@@ -708,6 +712,10 @@ select {
     min-height: 250px;
     width: 100%;
   }
+
+  #contactsModal .modal-dialog {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -745,6 +753,10 @@ select {
     max-height: 170px;
     min-height: 170px;
   }
+
+  #contactsModal .modal-dialog {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -777,6 +789,10 @@ select {
 
   .services__title, .services__price {
     font-size: 16px;
+  }
+
+  #contactsModal .modal-dialog {
+    max-width: 90%;
   }
 }
 
@@ -853,6 +869,19 @@ select {
   .divider__img {
     width: 30px;
     height: 30px;
+  }
+
+  #contactsModal .modal-dialog {
+    max-width: 98%;
+  }
+
+  .contact-us__contacts img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .services__item:first-child {
+    margin-top: 0;
   }
 }
 
