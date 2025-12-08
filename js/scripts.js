@@ -12,8 +12,8 @@ const podarunkoviSertyfikatyPage = document.querySelector(".podarunkovi-sertyfik
 $(document).ready(function () {
     $(".services__slider").slick({
         slidesToShow: 3,
-        prevArrow: '<button type="button" class="slick-prev"><img loading="lazy" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img loading="lazy" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img  src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img  src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
         autoplay: true,
         responsive: [
             {
@@ -41,8 +41,8 @@ $(document).ready(function () {
 
     if (!homePage) {
         $(".our-works__slider").slick({
-            prevArrow: '<button type="button" class="slick-prev"><img loading="lazy" src="../images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
-            nextArrow: '<button type="button" class="slick-next"><img loading="lazy" src="../images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+            prevArrow: '<button type="button" class="slick-prev"><img  src="../images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img  src="../images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
             autoplay: true,
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -59,8 +59,8 @@ $(document).ready(function () {
         });
     } else {
         $(".our-works__slider").slick({
-            prevArrow: '<button type="button" class="slick-prev"><img loading="lazy" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
-            nextArrow: '<button type="button" class="slick-next"><img loading="lazy" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+            prevArrow: '<button type="button" class="slick-prev"><img  src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img  src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
             autoplay: true,
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -78,8 +78,8 @@ $(document).ready(function () {
     }
 
     $(".employees__block").slick({
-        prevArrow: '<button type="button" class="slick-prev"><img loading="lazy" class="employee__sliderarrow" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img loading="lazy" class="employee__sliderarrow" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img  class="employee__sliderarrow" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img  class="employee__sliderarrow" src="images/icons/slider-arrow.svg" alt="slide-arrow"></button>',
         slidesToShow: 4,
         responsive: [
             {
