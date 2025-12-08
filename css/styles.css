@@ -820,10 +820,6 @@ select {
     margin-top: 15px !important;
   }
 
-  .our-works .slick-dots {
-    justify-content: start;
-  }
-
   .slick-dots li {
     margin: 2px 5px;
     font-size: 0;
