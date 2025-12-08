@@ -196,16 +196,11 @@ select {
 /*Section hero*/
 .banner {
   position: relative;
-  /*max-height: 700px;*/
 }
 
 .banner img {
   width: 100%;
 }
-
-/*#chystka-mebliv-page .banner {*/
-/*  max-height: 900px;*/
-/*}*/
 
 .banner__info {
   position: absolute;
@@ -311,8 +306,6 @@ select {
 .services__item + .services__item {
   margin-top: 25px;
   opacity: 0;
-  /*padding-left: 0 !important;*/
-  /*padding-right: 0 !important;*/
 }
 
 .services__item.active {
@@ -380,10 +373,6 @@ select {
   filter: blur(4px);
 }
 
-/*.employee__info-icon-block {*/
-/*  border: 1px solid #214A2B;*/
-/*}*/
-
 .employee__info-icon-block img {
   position: absolute;
   top: 10px;
@@ -409,7 +398,6 @@ select {
   padding: 20px 10px;
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.8);
-  /*box-shadow: 0px 2px 4.95px 0.05px rgba(0, 0, 0, 0.3);*/
 }
 
 .employee__info.active {
