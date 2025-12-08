@@ -875,8 +875,8 @@ select {
 
 @media (max-width: 520px) {
   .counter-number {
-    font-size: 150px;
-    padding-top: 20px;
+    font-size: 130px;
+    padding-top: 25px;
   }
 
   .counter__block {
