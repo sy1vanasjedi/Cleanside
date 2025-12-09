@@ -6,6 +6,14 @@ const chystkaMeblivPage = document.querySelector(".chystka-mebliv-page");
 const chystkaKylymivPage = document.querySelector(".chystka-kylymiv-page");
 const akvachistkaPage = document.querySelector(".akvachistka-page");
 const podarunkoviSertyfikatyPage = document.querySelector(".podarunkovi-sertyfikaty-page");
+const preloader = document.querySelector('.preloader')
+
+//Preloader
+document.addEventListener("DOMContentLoaded", (event) => {
+    setTimeout(() => {
+        preloader.classList.add('loaded');
+    }, 1500);
+});
 
 //Sliders
 //Services slider
