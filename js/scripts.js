@@ -283,14 +283,13 @@ function feedbackTextControl() {
 //Call us button change color in footer
 function watchBtn() {
     const fixedBtn = document.querySelector('.email-bt');
-    const footer = document.querySelector('footer'); // або #footer
+    const footer = document.querySelector('footer');
 
-    if (!fixedBtn || !footer) return; // якщо немає — виходимо
+    if (!fixedBtn || !footer) return;
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Кнопка (або її область) перетинається з футером
                 fixedBtn.classList.add('white-pulse');
             } else {
                 fixedBtn.classList.remove('white-pulse');
@@ -298,11 +297,10 @@ function watchBtn() {
         });
     }, {
         root: null,
-        threshold: 0,              // реагує при будь-якому перетині
+        threshold: 0,
         rootMargin: '0px'
     });
 
-// Спостерігаємо саме за футером
     observer.observe(footer);
 }
 
