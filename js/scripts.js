@@ -280,6 +280,32 @@ function feedbackTextControl() {
     }, 100);
 }
 
+//Call us button change color in footer
+function watchBtn() {
+    const fixedBtn = document.querySelector('.email-bt');
+    const footer = document.querySelector('footer'); // або #footer
+
+    if (!fixedBtn || !footer) return; // якщо немає — виходимо
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Кнопка (або її область) перетинається з футером
+                fixedBtn.classList.add('white-pulse');
+            } else {
+                fixedBtn.classList.remove('white-pulse');
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0,              // реагує при будь-якому перетині
+        rootMargin: '0px'
+    });
+
+// Спостерігаємо саме за футером
+    observer.observe(footer);
+}
+
 //Pages
 //Home page
 if (homePage) {
@@ -319,3 +345,4 @@ if (podarunkoviSertyfikatyPage) {
 
 //Call functions
 fixedHeader();
+watchBtn();

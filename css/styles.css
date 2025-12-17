@@ -836,6 +836,37 @@ select {
   }
 }
 
+/* White */
+@-webkit-keyframes email-an-white {
+  0% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2)
+  }
+  40% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 15px rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2)
+  }
+  80% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 26.7px rgba(255, 255, 255, 0.067)
+  }
+  100% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 40px rgba(255, 255, 255, 0.0)
+  }
+}
+
+@keyframes email-an-white {
+  0% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2)
+  }
+  40% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 15px rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2)
+  }
+  80% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 26.7px rgba(255, 255, 255, 0.067)
+  }
+  100% {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 40px rgba(255, 255, 255, 0.0)
+  }
+}
+
 @keyframes opsimple {
   0% {
     opacity: 0;
@@ -894,6 +925,11 @@ select {
 
   #contactsModal .modal-dialog {
     max-width: 60%;
+  }
+
+  .email-bt.white-pulse {
+    -webkit-animation: email-an-white linear 1s infinite;
+    animation: email-an-white linear 1s infinite;
   }
 }
 
